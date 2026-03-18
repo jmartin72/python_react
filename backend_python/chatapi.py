@@ -58,7 +58,7 @@ async def create_upload_file(
         base64_image = base64.b64encode(contents).decode("utf-8")
 
         completion = client.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-5.4-nano",
             messages=[
                 {
                     "role": "user",
@@ -76,7 +76,7 @@ async def create_upload_file(
         )
     else:
         completion = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-5.4-nano",
             messages=[
                 {
                     "role": "system", 
