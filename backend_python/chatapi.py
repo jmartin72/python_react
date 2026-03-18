@@ -31,7 +31,7 @@ app.add_middleware(
 @app.post("/")
 def ai_prompt(request: ChatRequest):
     completion = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-5.4-nano",
         messages=[
             {
                 "role": "system", 
